@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## RDPAlertView
 
-Copyright (c) 2016 TommyLiu <tomy.xos@gmail.com>
+Copyright (c) 2016 Milker90 <tomy.xos@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

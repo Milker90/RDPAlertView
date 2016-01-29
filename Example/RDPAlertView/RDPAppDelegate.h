@@ -2,8 +2,8 @@
 //  RDPAppDelegate.h
 //  RDPAlertView
 //
-//  Created by TommyLiu on 01/29/2016.
-//  Copyright (c) 2016 TommyLiu. All rights reserved.
+//  Created by Milker90 on 01/29/2016.
+//  Copyright (c) 2016 Milker90. All rights reserved.
 //
 
 @import UIKit;
