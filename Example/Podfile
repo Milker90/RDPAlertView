@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'RDPAlertView_Example', :exclusive => true do
+  pod 'RDPAlertView', :path => '../'
+end
+
+target 'RDPAlertView_Tests', :exclusive => true do
+  pod 'RDPAlertView', :path => '../'
+
+  
+end
