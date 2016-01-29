@@ -1,0 +1,25 @@
+{
+  "name": "RDPAlertView",
+  "version": "0.1.0",
+  "summary": "A short description of RDPAlertView.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RDPAlertView",
+  "license": "MIT",
+  "authors": {
+    "TommyLiu": "tomy.xos@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RDPAlertView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "RDPAlertView": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

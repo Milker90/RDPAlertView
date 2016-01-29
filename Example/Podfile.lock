@@ -1,0 +1,14 @@
+PODS:
+  - RDPAlertView (0.1.0)
+
+DEPENDENCIES:
+  - RDPAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  RDPAlertView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RDPAlertView: 14263282aa8e889fb952c76041358247b75a6e6b
+
+COCOAPODS: 0.39.0
