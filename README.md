@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RDPAlertView
 
 [![CI Status](http://img.shields.io/travis/TommyLiu/RDPAlertView.svg?style=flat)](https://travis-ci.org/TommyLiu/RDPAlertView)
@@ -27,3 +28,6 @@ TommyLiu, tomy.xos@gmail.com
 ## License
 
 RDPAlertView is available under the MIT license. See the LICENSE file for more info.
+=======
+# RDPAlertView
+>>>>>>> 6c00f5c8e69ed6f0042b09f9cb405ab57f95020a
