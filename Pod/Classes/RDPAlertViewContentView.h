@@ -29,6 +29,8 @@ typedef void (^RDPAlertViewActionBlock)(RDPAlertView * alertView, NSDictionary *
 
 @interface RDPAlertViewContentView : UIView
 
+@property (nonatomic, strong) id data;
+
 @property (nonatomic, weak) RDPAlertView *alertView;
 
 @property (nonatomic, copy) RDPAlertViewResultBlock reslutBlock;
@@ -40,14 +42,12 @@ typedef void (^RDPAlertViewActionBlock)(RDPAlertView * alertView, NSDictionary *
 - (void)configUI;
 
 /**
- *  需注意最大高度，最大高度根据不同的设备设置，使用者自己考虑
- *  大于最大高度的应该使用scrollview或tableview来展示
+ *  隐藏alertView
+ *
+ *  @param additionalValues 需要传出去的数据
+ *  @param buttonIndex      当前选择的按钮索引
  */
-- (CGFloat)rdpContentViewHeight;
-
-/**
- *  一般不需要设置，自定义可能要用到
- */
-- (CGFloat)rdpContentViewWidth;
+- (void)hideWithAdditionalValues:(NSDictionary *)additionalValues
+                     buttonIndex:(NSInteger)buttonIndex;
 
 @end

@@ -7,94 +7,180 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06A90E33D00E2C805FC2F4744A64C4B1 /* RDPAlertViewContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 633DFD49C487A021E598504D9C7CE78C /* RDPAlertViewContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		171E0398BC26A1EA448C4A6F33D18C1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		1BC489026BF9C3CC99A1C00542840FE9 /* RDPAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86DDE969708334A52023667E4FBC4404 /* RDPAlertView.bundle */; };
-		326DC7E2B7E58D913DDBDBD014DE14EA /* RDPAlertViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBAC104A351AA501D884B8BBEC7CD8 /* RDPAlertViewAnimation.m */; };
-		606B0053701B8586A1274296B4B7BC2E /* RDPAlertViewAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C716E157E7357BB777B50E9B73F35A /* RDPAlertViewAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82ED7DDDC9C05A62834268312A4FFEBB /* RDPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC2ACD4FD474E735EFF1B7675693AB /* RDPAlertView.m */; };
-		85056D8F7762D0CE292D2897FC340414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		884F713E0C44207D1B8AF230A6B6942B /* RDPAlertViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C8E2A44BC88E0EEBDF26C20A98C32 /* RDPAlertViewContentView.m */; };
-		98717F61B6056ABF5B9A65ECF65DE5DF /* RDPAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D7D7CA80A281BC2C3D6445C6CAF45E /* RDPAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADA8261D4AE9FDAFD8223B30AA32C32C /* RDPAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5752FF54CF006531F6CFBC88CCD9A72E /* RDPAlertView-dummy.m */; };
+		09319DC7FF28A7E69562C0CE680CEA34 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */; };
+		0F787EBF9071328BC31B6F6D1FDA24C7 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */; };
+		15DEB2DD31B88E5B9FCFC40763CD1F57 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		210E54DB4CD8F8309D1C7A1D4D563F09 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23DF4D35AD7BBD597CAC2017D568D8A9 /* RDPAlertViewContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 633DFD49C487A021E598504D9C7CE78C /* RDPAlertViewContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		324401773C1AC5C64CEA479922C7251D /* RDPAlertViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C8E2A44BC88E0EEBDF26C20A98C32 /* RDPAlertViewContentView.m */; };
+		3389EADEEC0999848FD4B4EF077D51EB /* Pods-RDPAlertView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20ABAF6000DF327C10E005249CEE9187 /* Pods-RDPAlertView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369A9EA0F73A9CE9B602024FF4C8EBEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		3BA506354BB22877EDA5E04B8AF686E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		401E584A250A351D34B366F63187A081 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421251E1E3A4812C308DDBA28E5217FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		423C547758DEF5005C0494CBCECB4484 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E51C10297C9C36377046EBC1AAB5FE /* RDPAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D7D7CA80A281BC2C3D6445C6CAF45E /* RDPAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F7D688E1DF98DA3CEBB130D64E4C542 /* RDPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC2ACD4FD474E735EFF1B7675693AB /* RDPAlertView.m */; };
+		525C1EB1DF453A0E070E60844577C8DF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57B36412B5BD74147DB295928B6C0733 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B25FE8DC265E9248284275B868405EF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		747D181536AE92CD19C540EEA3DF3305 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DDC3E3AD8ADCF81E2C2BFD286E02E1D /* RDPAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5752FF54CF006531F6CFBC88CCD9A72E /* RDPAlertView-dummy.m */; };
+		83FA429634DF5ACFE4355FA4132BCC05 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */; };
+		844C21B525D4A325E3987C6E558D0067 /* Pods-RDPAlertView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB5AD3D82C5F547D09D00B9BAB4D9E6 /* Pods-RDPAlertView_Example-dummy.m */; };
+		95F38B253E62525CC55EFFA47BDD079D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */; };
+		9B8B4AA93BD38A1F6CFDB9A5E57CB722 /* RDPAlertViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBAC104A351AA501D884B8BBEC7CD8 /* RDPAlertViewAnimation.m */; };
+		9C56F82544D73673FC3A918FA3ED0A6A /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */; };
+		A30195AF7E9E75DC2ABB0BCC48244046 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */; };
+		A65A973EEC919DB0C61C0124ABA45FF6 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB6C6FA1AC8A46ED0E985D2B498680BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		AD48CE47A6023CFDD8418D29AAB186D8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */; };
 		AEFC7F8E77F2A96D3FC92EBE4FD8DD2A /* Pods-RDPAlertView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A841468B9941624C90D5657B97C025C3 /* Pods-RDPAlertView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8628371ED53C740D82EA8884107F8BD /* Pods-RDPAlertView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB5AD3D82C5F547D09D00B9BAB4D9E6 /* Pods-RDPAlertView_Example-dummy.m */; };
+		AF51CE6F828399B4CAA32666182086D3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCBF9D4A7243B5ECAFDC35D4EF1E46FE /* RDPAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4289B56448385A866A42B32A0DD35578 /* RDPAlertView.bundle */; };
+		C1B483470175E915F533437CCCC21290 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 986CB32629319F7F2256662716334944 /* MASConstraint.m */; };
+		C246E48ABEA4F6963D5E8E15D79F1DC4 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */; };
+		D00212A2142350D22692D6EDECEFB48A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		D11F2C1C9F89043AE6690329039CF10D /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1CBE8DAE3448ABA249C434A1FCC1A3F /* RDPAlertViewAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C716E157E7357BB777B50E9B73F35A /* RDPAlertViewAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C7050934CB83E38856E629F04EB17E /* Pods-RDPAlertView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C81957B5F488A299CB97C4FDF52D74 /* Pods-RDPAlertView_Tests-dummy.m */; };
-		E9E41115C78FF45686A5424A29421A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		EA8A14DF9874C8284A3ADF3A1215DC55 /* RDPAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D43D39C39FF214D14B8EBE737558B118 /* RDPAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9872E1885CE47BEDC2F7450FF1C4614 /* Pods-RDPAlertView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20ABAF6000DF327C10E005249CEE9187 /* Pods-RDPAlertView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCD8D73BCE673D670BAB2672D57D2F70 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD89DF835681D08EABA793D61E60D284 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0BBEA076160D71EC938B733F5348AC1 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A16897DF16660A818EFB46F7704EC9 /* RDPAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D43D39C39FF214D14B8EBE737558B118 /* RDPAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E641EBCA8FC60CDC04C4C12A25D5B887 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9E41115C78FF45686A5424A29421A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		F679E99C99A0142F9C18487EE4957661 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7DE6FBFAC50DD8F8937889527A0A36C /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6256D41B3D939B64D0DFBC411676DA9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28B806181B4238713484AB582AD55A73;
+			remoteInfo = "RDPAlertView-RDPAlertView";
+		};
 		7CDB0A8D1A2D6A66A108A605A1AD5BB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9E80E68FBB65F9D96297B93DC4DC0603;
+			remoteGlobalIDString = 62FD9DC23453F86F2A2C567CBD0252FD;
 			remoteInfo = RDPAlertView;
 		};
-		D89B1881D71C38C793A8D1D6F6B61169 /* PBXContainerItemProxy */ = {
+		7EA0080F21EB440E37534026E280CC64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE421C0DF24A9A5D15E1F6CD5104BA7A;
-			remoteInfo = "RDPAlertView-RDPAlertView";
+			remoteGlobalIDString = A9A83F63385AA43314397B8DD375464B;
+			remoteInfo = Masonry;
 		};
-		F3B38A74E7A525ED0E16228C2703284D /* PBXContainerItemProxy */ = {
+		F315B802C1EF142A491640C151A6D435 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9E80E68FBB65F9D96297B93DC4DC0603;
+			remoteGlobalIDString = 62FD9DC23453F86F2A2C567CBD0252FD;
 			remoteInfo = RDPAlertView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000051B22E4BBDD369640B27B0E2BAA2 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0293BFA199F4503FD9E0C53F5C3FDD64 /* Pods-RDPAlertView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDPAlertView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		10B050E355B75CEEDDBF2652DCECD690 /* Pods-RDPAlertView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RDPAlertView_Example.modulemap"; sourceTree = "<group>"; };
 		132A7C635BE1D2080B1AA7C2B9AA83A0 /* RDPAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDPAlertView.xcconfig; sourceTree = "<group>"; };
+		13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		1E2A4F99CCA641929DA4B700EEC91CCF /* Pods-RDPAlertView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RDPAlertView_Tests.modulemap"; sourceTree = "<group>"; };
+		1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		1F35258CC4CFD9E3449BD5B2F1B700C4 /* RDPAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDPAlertView-prefix.pch"; sourceTree = "<group>"; };
 		20ABAF6000DF327C10E005249CEE9187 /* Pods-RDPAlertView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RDPAlertView_Example-umbrella.h"; sourceTree = "<group>"; };
 		23C81957B5F488A299CB97C4FDF52D74 /* Pods-RDPAlertView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RDPAlertView_Tests-dummy.m"; sourceTree = "<group>"; };
 		2A24C429C2ACA0088973BD8CAA92C89E /* Pods-RDPAlertView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RDPAlertView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2F41A36F17B658B7BF8E7A912980CBE7 /* Pods-RDPAlertView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDPAlertView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3027ECF3675B7D92CFE998E7807ED8BD /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Masonry.modulemap; sourceTree = "<group>"; };
+		303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		379EAF01070364AC1BC3C5E6CFB9093E /* Pods_RDPAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDPAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		3D283AB4A42A78D13D7070CC1E237477 /* Pods-RDPAlertView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDPAlertView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4289B56448385A866A42B32A0DD35578 /* RDPAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDPAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B689CFFC7B356459CC95E9CCA5C027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDC2ACD4FD474E735EFF1B7675693AB /* RDPAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPAlertView.m; sourceTree = "<group>"; };
+		537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		5752FF54CF006531F6CFBC88CCD9A72E /* RDPAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDPAlertView-dummy.m"; sourceTree = "<group>"; };
 		5754F2CE1B77B754E97BDEB8EC2F1166 /* Pods-RDPAlertView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDPAlertView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		57D4D742D2CC79556AF4B1127AD2EFE0 /* Pods-RDPAlertView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RDPAlertView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A61F5C5AF4FC96D337817F28E7F51E2 /* Pods_RDPAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDPAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		633DFD49C487A021E598504D9C7CE78C /* RDPAlertViewContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPAlertViewContentView.h; sourceTree = "<group>"; };
 		642DF08E16FE77F03AC153EF474603A8 /* Pods-RDPAlertView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDPAlertView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		659AC4B380629A578E8D82BBB89669AE /* Pods-RDPAlertView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDPAlertView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73C1644440BBFF88277260A45F49BFF9 /* RDPAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RDPAlertView.modulemap; sourceTree = "<group>"; };
+		77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		7A62B99ADCB9A194B278CFC700AC5E34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB5AD3D82C5F547D09D00B9BAB4D9E6 /* Pods-RDPAlertView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RDPAlertView_Example-dummy.m"; sourceTree = "<group>"; };
-		86DDE969708334A52023667E4FBC4404 /* RDPAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDPAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		7F44A621BE24B87AEF75DD7193846188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D5D20F291CE4869EB284B8E37213F0 /* Pods-RDPAlertView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDPAlertView_Tests-resources.sh"; sourceTree = "<group>"; };
 		91C716E157E7357BB777B50E9B73F35A /* RDPAlertViewAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPAlertViewAnimation.h; sourceTree = "<group>"; };
+		96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		986CB32629319F7F2256662716334944 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		A0DBAC104A351AA501D884B8BBEC7CD8 /* RDPAlertViewAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPAlertViewAnimation.m; sourceTree = "<group>"; };
+		A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		A5D7D7CA80A281BC2C3D6445C6CAF45E /* RDPAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDPAlertView-umbrella.h"; sourceTree = "<group>"; };
 		A841468B9941624C90D5657B97C025C3 /* Pods-RDPAlertView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RDPAlertView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C702BAC7981B823F4D4315640CC2AE54 /* Pods_RDPAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDPAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		C757CB1404FE74CFB20EFE35905C7139 /* Pods-RDPAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDPAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C8E11B7B27FABD47E0048052A6A3CB77 /* Pods_RDPAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDPAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9460636A228DA2C8F5EC4A2AB7EBB6 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		D43D39C39FF214D14B8EBE737558B118 /* RDPAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPAlertView.h; sourceTree = "<group>"; };
-		D9015BB0F763A1344ACD94E1E3A1C7F3 /* RDPAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDPAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98C8E2A44BC88E0EEBDF26C20A98C32 /* RDPAlertViewContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPAlertViewContentView.m; sourceTree = "<group>"; };
 		DFE07589FBBE1C513E7A1E5DC92BAAAC /* Pods-RDPAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDPAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E379660E9161EE8BCB7C14BC4DF3165D /* Pods-RDPAlertView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDPAlertView_Example-resources.sh"; sourceTree = "<group>"; };
 		E8C014604A2C7F490B94DA5249391330 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		F45475DF174AF8C4C5CC95614607A553 /* RDPAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDPAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		072E38B7A9013EFC3268D857AD2C4599 /* Frameworks */ = {
+		0917CE065FEA680AA738CD983B9FEBB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E0CF5B11CC74096DE6216D0EE0169B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421251E1E3A4812C308DDBA28E5217FA /* Foundation.framework in Frameworks */,
+				369A9EA0F73A9CE9B602024FF4C8EBEA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536643E2240FE76974447CD295BA5DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6C6FA1AC8A46ED0E985D2B498680BB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,19 +192,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4BA0A72C15438DCFB83CD9E251E802A /* Frameworks */ = {
+		ACD412FF738CE240C57528A78A594818 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85056D8F7762D0CE292D2897FC340414 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB38765FC2B5C4AD410953BDBA1AD8D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				171E0398BC26A1EA448C4A6F33D18C1C /* Foundation.framework in Frameworks */,
+				3BA506354BB22877EDA5E04B8AF686E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +243,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		2E93966660CB9957C0579B3C10886BFC /* RDPAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,12 +262,32 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E8CA31209762E79D32B7580BCB2BF76 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
 				12C940E6501954100E46CDE8CF57973C /* Classes */,
 			);
 			path = Pod;
+			sourceTree = "<group>";
+		};
+		5FEE1FE5823CE182A40D85C778BAB7E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000051B22E4BBDD369640B27B0E2BAA2 /* Masonry.framework */,
+				5A61F5C5AF4FC96D337817F28E7F51E2 /* Pods_RDPAlertView_Example.framework */,
+				379EAF01070364AC1BC3C5E6CFB9093E /* Pods_RDPAlertView_Tests.framework */,
+				4289B56448385A866A42B32A0DD35578 /* RDPAlertView.bundle */,
+				F45475DF174AF8C4C5CC95614607A553 /* RDPAlertView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6F294E5B9E69353149EE9429AE99CE19 /* Development Pods */ = {
@@ -196,10 +303,58 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				6F294E5B9E69353149EE9429AE99CE19 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FC9E2D28D70132646850E4B0F59F8C0F /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */,
+				5FEE1FE5823CE182A40D85C778BAB7E4 /* Products */,
 				1260296A00D69E015E22A1FEC64FD768 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */,
+				537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */,
+				ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */,
+				986CB32629319F7F2256662716334944 /* MASConstraint.m */,
+				77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */,
+				A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */,
+				FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */,
+				C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */,
+				611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */,
+				303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */,
+				AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */,
+				96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */,
+				0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */,
+				1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */,
+				6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */,
+				5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */,
+				B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */,
+				F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */,
+				2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */,
+				7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */,
+				61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */,
+				C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */,
+				3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */,
+				AB2D74BCA437C31F2B7B0E2905262257 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		AB2D74BCA437C31F2B7B0E2905262257 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F44A621BE24B87AEF75DD7193846188 /* Info.plist */,
+				3027ECF3675B7D92CFE998E7807ED8BD /* Masonry.modulemap */,
+				61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */,
+				FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */,
+				CD9460636A228DA2C8F5EC4A2AB7EBB6 /* Masonry-prefix.pch */,
+				13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
 		B8822A2D1973423682D4E5C9BCD946A5 /* Support Files */ = {
@@ -214,22 +369,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/RDPAlertView";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		C83C1280A35F84DB8A608AC64CF3CD66 /* Pods-RDPAlertView_Example */ = {
@@ -250,20 +389,40 @@
 			path = "Target Support Files/Pods-RDPAlertView_Example";
 			sourceTree = "<group>";
 		};
-		FC9E2D28D70132646850E4B0F59F8C0F /* Products */ = {
+		E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C8E11B7B27FABD47E0048052A6A3CB77 /* Pods_RDPAlertView_Example.framework */,
-				C702BAC7981B823F4D4315640CC2AE54 /* Pods_RDPAlertView_Tests.framework */,
-				86DDE969708334A52023667E4FBC4404 /* RDPAlertView.bundle */,
-				D9015BB0F763A1344ACD94E1E3A1C7F3 /* RDPAlertView.framework */,
+				A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0BCFDFD33BF4F6420473B13915E87D72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B25FE8DC265E9248284275B868405EF /* MASCompositeConstraint.h in Headers */,
+				F679E99C99A0142F9C18487EE4957661 /* MASConstraint+Private.h in Headers */,
+				DCD8D73BCE673D670BAB2672D57D2F70 /* MASConstraint.h in Headers */,
+				525C1EB1DF453A0E070E60844577C8DF /* MASConstraintMaker.h in Headers */,
+				57B36412B5BD74147DB295928B6C0733 /* MASLayoutConstraint.h in Headers */,
+				A65A973EEC919DB0C61C0124ABA45FF6 /* Masonry-umbrella.h in Headers */,
+				423C547758DEF5005C0494CBCECB4484 /* Masonry.h in Headers */,
+				210E54DB4CD8F8309D1C7A1D4D563F09 /* MASUtilities.h in Headers */,
+				D11F2C1C9F89043AE6690329039CF10D /* MASViewAttribute.h in Headers */,
+				15DEB2DD31B88E5B9FCFC40763CD1F57 /* MASViewConstraint.h in Headers */,
+				401E584A250A351D34B366F63187A081 /* NSArray+MASAdditions.h in Headers */,
+				DD89DF835681D08EABA793D61E60D284 /* NSArray+MASShorthandAdditions.h in Headers */,
+				E641EBCA8FC60CDC04C4C12A25D5B887 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				747D181536AE92CD19C540EEA3DF3305 /* View+MASAdditions.h in Headers */,
+				E0BBEA076160D71EC938B733F5348AC1 /* View+MASShorthandAdditions.h in Headers */,
+				AF51CE6F828399B4CAA32666182086D3 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		284DA1A27AC1B0448FB2F5AB6EC64D9A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,44 +431,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5823A4A0A3E4B452AD6DD490D8E0C4B7 /* Headers */ = {
+		60219F31ACA7C28ACD27428A4F3FDD3F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98717F61B6056ABF5B9A65ECF65DE5DF /* RDPAlertView-umbrella.h in Headers */,
-				EA8A14DF9874C8284A3ADF3A1215DC55 /* RDPAlertView.h in Headers */,
-				606B0053701B8586A1274296B4B7BC2E /* RDPAlertViewAnimation.h in Headers */,
-				06A90E33D00E2C805FC2F4744A64C4B1 /* RDPAlertViewContentView.h in Headers */,
+				49E51C10297C9C36377046EBC1AAB5FE /* RDPAlertView-umbrella.h in Headers */,
+				E1A16897DF16660A818EFB46F7704EC9 /* RDPAlertView.h in Headers */,
+				D1CBE8DAE3448ABA249C434A1FCC1A3F /* RDPAlertViewAnimation.h in Headers */,
+				23DF4D35AD7BBD597CAC2017D568D8A9 /* RDPAlertViewContentView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		825C102600D06B1341BD5FF97BF2BFD9 /* Headers */ = {
+		7756CAF41F497C0F4FF6AD88DDB2A22C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9872E1885CE47BEDC2F7450FF1C4614 /* Pods-RDPAlertView_Example-umbrella.h in Headers */,
+				3389EADEEC0999848FD4B4EF077D51EB /* Pods-RDPAlertView_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1946363499ACBB37D0B40FA36E4CB927 /* Pods-RDPAlertView_Example */ = {
+		28B806181B4238713484AB582AD55A73 /* RDPAlertView-RDPAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24DE5C45D6705748F8E2B4C6059342DC /* Build configuration list for PBXNativeTarget "Pods-RDPAlertView_Example" */;
+			buildConfigurationList = 8AFD0B1940813DE19D7C6BE6F4D8052E /* Build configuration list for PBXNativeTarget "RDPAlertView-RDPAlertView" */;
 			buildPhases = (
-				E0E652C0990B0176853B800F23D36EED /* Sources */,
-				B4BA0A72C15438DCFB83CD9E251E802A /* Frameworks */,
-				825C102600D06B1341BD5FF97BF2BFD9 /* Headers */,
+				FFC516DC437FFCED236B001FA74E198F /* Sources */,
+				0917CE065FEA680AA738CD983B9FEBB7 /* Frameworks */,
+				173BD6DC5EED35D75521E2EDBE8D8B79 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				07C6B4AB270EA2E5F27EC465D380A104 /* PBXTargetDependency */,
 			);
-			name = "Pods-RDPAlertView_Example";
-			productName = "Pods-RDPAlertView_Example";
-			productReference = C8E11B7B27FABD47E0048052A6A3CB77 /* Pods_RDPAlertView_Example.framework */;
+			name = "RDPAlertView-RDPAlertView";
+			productName = "RDPAlertView-RDPAlertView";
+			productReference = 4289B56448385A866A42B32A0DD35578 /* RDPAlertView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		62FD9DC23453F86F2A2C567CBD0252FD /* RDPAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658179A1B7DC0C7927780F1F69C59515 /* Build configuration list for PBXNativeTarget "RDPAlertView" */;
+			buildPhases = (
+				D071441EB5ED832FDB6415C1DB8E74ED /* Sources */,
+				ACD412FF738CE240C57528A78A594818 /* Frameworks */,
+				CCB3333CF230C705AA8174A116759418 /* Resources */,
+				60219F31ACA7C28ACD27428A4F3FDD3F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5587B550BB279724868B68F11E1DC752 /* PBXTargetDependency */,
+			);
+			name = RDPAlertView;
+			productName = RDPAlertView;
+			productReference = F45475DF174AF8C4C5CC95614607A553 /* RDPAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		81440D9DAE1B94247EC73C6852E7C66A /* Pods-RDPAlertView_Tests */ = {
@@ -327,44 +504,44 @@
 			);
 			name = "Pods-RDPAlertView_Tests";
 			productName = "Pods-RDPAlertView_Tests";
-			productReference = C702BAC7981B823F4D4315640CC2AE54 /* Pods_RDPAlertView_Tests.framework */;
+			productReference = 379EAF01070364AC1BC3C5E6CFB9093E /* Pods_RDPAlertView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9E80E68FBB65F9D96297B93DC4DC0603 /* RDPAlertView */ = {
+		A9A83F63385AA43314397B8DD375464B /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87B23567F8AE898F2A3915BDA4A555EA /* Build configuration list for PBXNativeTarget "RDPAlertView" */;
+			buildConfigurationList = C692385904021C81058B89C8E286FF69 /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				8313EC1043B871F562A4A66E9B3E030F /* Sources */,
-				CB38765FC2B5C4AD410953BDBA1AD8D1 /* Frameworks */,
-				866DE91EE12BC9FF43F0BD0B2745C331 /* Resources */,
-				5823A4A0A3E4B452AD6DD490D8E0C4B7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				964FB0A3E1929E9CB6C748BC4B75FE1E /* PBXTargetDependency */,
-			);
-			name = RDPAlertView;
-			productName = RDPAlertView;
-			productReference = D9015BB0F763A1344ACD94E1E3A1C7F3 /* RDPAlertView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CE421C0DF24A9A5D15E1F6CD5104BA7A /* RDPAlertView-RDPAlertView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09C55AA42EE5E151DC48DC657B03238E /* Build configuration list for PBXNativeTarget "RDPAlertView-RDPAlertView" */;
-			buildPhases = (
-				6948DDE4A9C5A24A4ED622BD889FCADB /* Sources */,
-				072E38B7A9013EFC3268D857AD2C4599 /* Frameworks */,
-				CA80AD81D36C50E79707030223B9B172 /* Resources */,
+				AE5B467F4ACA3C58C804715570C7C3AC /* Sources */,
+				39E0CF5B11CC74096DE6216D0EE0169B /* Frameworks */,
+				0BCFDFD33BF4F6420473B13915E87D72 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "RDPAlertView-RDPAlertView";
-			productName = "RDPAlertView-RDPAlertView";
-			productReference = 86DDE969708334A52023667E4FBC4404 /* RDPAlertView.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = Masonry;
+			productName = Masonry;
+			productReference = 000051B22E4BBDD369640B27B0E2BAA2 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF9CC3BD81DD5B64D9BF88E4996443B0 /* Pods-RDPAlertView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98422E3FE300CF1ED4AF48C56C2E1388 /* Build configuration list for PBXNativeTarget "Pods-RDPAlertView_Example" */;
+			buildPhases = (
+				88DD0D7BF3FC1BFFF8DAC292CD20C4D9 /* Sources */,
+				536643E2240FE76974447CD295BA5DC3 /* Frameworks */,
+				7756CAF41F497C0F4FF6AD88DDB2A22C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD198D3D939E2138A1D67F8F110C7C56 /* PBXTargetDependency */,
+				CB5B4CE165E8D9983B0D74FE7D93E455 /* PBXTargetDependency */,
+			);
+			name = "Pods-RDPAlertView_Example";
+			productName = "Pods-RDPAlertView_Example";
+			productReference = 5A61F5C5AF4FC96D337817F28E7F51E2 /* Pods_RDPAlertView_Example.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -383,31 +560,32 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FC9E2D28D70132646850E4B0F59F8C0F /* Products */;
+			productRefGroup = 5FEE1FE5823CE182A40D85C778BAB7E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1946363499ACBB37D0B40FA36E4CB927 /* Pods-RDPAlertView_Example */,
+				A9A83F63385AA43314397B8DD375464B /* Masonry */,
+				AF9CC3BD81DD5B64D9BF88E4996443B0 /* Pods-RDPAlertView_Example */,
 				81440D9DAE1B94247EC73C6852E7C66A /* Pods-RDPAlertView_Tests */,
-				9E80E68FBB65F9D96297B93DC4DC0603 /* RDPAlertView */,
-				CE421C0DF24A9A5D15E1F6CD5104BA7A /* RDPAlertView-RDPAlertView */,
+				62FD9DC23453F86F2A2C567CBD0252FD /* RDPAlertView */,
+				28B806181B4238713484AB582AD55A73 /* RDPAlertView-RDPAlertView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		866DE91EE12BC9FF43F0BD0B2745C331 /* Resources */ = {
+		173BD6DC5EED35D75521E2EDBE8D8B79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC489026BF9C3CC99A1C00542840FE9 /* RDPAlertView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA80AD81D36C50E79707030223B9B172 /* Resources */ = {
+		CCB3333CF230C705AA8174A116759418 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBF9D4A7243B5ECAFDC35D4EF1E46FE /* RDPAlertView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,52 +600,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6948DDE4A9C5A24A4ED622BD889FCADB /* Sources */ = {
+		88DD0D7BF3FC1BFFF8DAC292CD20C4D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844C21B525D4A325E3987C6E558D0067 /* Pods-RDPAlertView_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8313EC1043B871F562A4A66E9B3E030F /* Sources */ = {
+		AE5B467F4ACA3C58C804715570C7C3AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA8261D4AE9FDAFD8223B30AA32C32C /* RDPAlertView-dummy.m in Sources */,
-				82ED7DDDC9C05A62834268312A4FFEBB /* RDPAlertView.m in Sources */,
-				326DC7E2B7E58D913DDBDBD014DE14EA /* RDPAlertViewAnimation.m in Sources */,
-				884F713E0C44207D1B8AF230A6B6942B /* RDPAlertViewContentView.m in Sources */,
+				09319DC7FF28A7E69562C0CE680CEA34 /* MASCompositeConstraint.m in Sources */,
+				C1B483470175E915F533437CCCC21290 /* MASConstraint.m in Sources */,
+				95F38B253E62525CC55EFFA47BDD079D /* MASConstraintMaker.m in Sources */,
+				C246E48ABEA4F6963D5E8E15D79F1DC4 /* MASLayoutConstraint.m in Sources */,
+				F7DE6FBFAC50DD8F8937889527A0A36C /* Masonry-dummy.m in Sources */,
+				9C56F82544D73673FC3A918FA3ED0A6A /* MASViewAttribute.m in Sources */,
+				A30195AF7E9E75DC2ABB0BCC48244046 /* MASViewConstraint.m in Sources */,
+				0F787EBF9071328BC31B6F6D1FDA24C7 /* NSArray+MASAdditions.m in Sources */,
+				D00212A2142350D22692D6EDECEFB48A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				AD48CE47A6023CFDD8418D29AAB186D8 /* View+MASAdditions.m in Sources */,
+				83FA429634DF5ACFE4355FA4132BCC05 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0E652C0990B0176853B800F23D36EED /* Sources */ = {
+		D071441EB5ED832FDB6415C1DB8E74ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8628371ED53C740D82EA8884107F8BD /* Pods-RDPAlertView_Example-dummy.m in Sources */,
+				7DDC3E3AD8ADCF81E2C2BFD286E02E1D /* RDPAlertView-dummy.m in Sources */,
+				4F7D688E1DF98DA3CEBB130D64E4C542 /* RDPAlertView.m in Sources */,
+				9B8B4AA93BD38A1F6CFDB9A5E57CB722 /* RDPAlertViewAnimation.m in Sources */,
+				324401773C1AC5C64CEA479922C7251D /* RDPAlertViewContentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC516DC437FFCED236B001FA74E198F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		07C6B4AB270EA2E5F27EC465D380A104 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RDPAlertView;
-			target = 9E80E68FBB65F9D96297B93DC4DC0603 /* RDPAlertView */;
-			targetProxy = F3B38A74E7A525ED0E16228C2703284D /* PBXContainerItemProxy */;
-		};
 		2059A188A8FFD392FE21FA5DF0DD103D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RDPAlertView;
-			target = 9E80E68FBB65F9D96297B93DC4DC0603 /* RDPAlertView */;
+			target = 62FD9DC23453F86F2A2C567CBD0252FD /* RDPAlertView */;
 			targetProxy = 7CDB0A8D1A2D6A66A108A605A1AD5BB2 /* PBXContainerItemProxy */;
 		};
-		964FB0A3E1929E9CB6C748BC4B75FE1E /* PBXTargetDependency */ = {
+		5587B550BB279724868B68F11E1DC752 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "RDPAlertView-RDPAlertView";
-			target = CE421C0DF24A9A5D15E1F6CD5104BA7A /* RDPAlertView-RDPAlertView */;
-			targetProxy = D89B1881D71C38C793A8D1D6F6B61169 /* PBXContainerItemProxy */;
+			target = 28B806181B4238713484AB582AD55A73 /* RDPAlertView-RDPAlertView */;
+			targetProxy = 6256D41B3D939B64D0DFBC411676DA9D /* PBXContainerItemProxy */;
+		};
+		CB5B4CE165E8D9983B0D74FE7D93E455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RDPAlertView;
+			target = 62FD9DC23453F86F2A2C567CBD0252FD /* RDPAlertView */;
+			targetProxy = F315B802C1EF142A491640C151A6D435 /* PBXContainerItemProxy */;
+		};
+		DD198D3D939E2138A1D67F8F110C7C56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = A9A83F63385AA43314397B8DD375464B /* Masonry */;
+			targetProxy = 7EA0080F21EB440E37534026E280CC64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,18 +747,6 @@
 			};
 			name = Debug;
 		};
-		11DAB865D1CB015DCCF5BA6722DF01EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 132A7C635BE1D2080B1AA7C2B9AA83A0 /* RDPAlertView.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = RDPAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		306918FC4AE5FDC9D3B52AEEE459B9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 659AC4B380629A578E8D82BBB89669AE /* Pods-RDPAlertView_Tests.debug.xcconfig */;
@@ -617,37 +807,7 @@
 			};
 			name = Release;
 		};
-		64A363664BF6914718B724511AFE9434 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFE07589FBBE1C513E7A1E5DC92BAAAC /* Pods-RDPAlertView_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RDPAlertView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RDPAlertView_Example/Pods-RDPAlertView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RDPAlertView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		893B4BE1139DBA8A4D75073D0E58F666 /* Debug */ = {
+		643DBF28F81B1755ABFA4FF8F7469924 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 132A7C635BE1D2080B1AA7C2B9AA83A0 /* RDPAlertView.xcconfig */;
 			buildSettings = {
@@ -659,7 +819,7 @@
 			};
 			name = Debug;
 		};
-		8CE981DCB79115843D44C478CED86228 /* Release */ = {
+		7442FCE26F52AB152B284BE69CE79789 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C757CB1404FE74CFB20EFE35905C7139 /* Pods-RDPAlertView_Example.release.xcconfig */;
 			buildSettings = {
@@ -689,7 +849,7 @@
 			};
 			name = Release;
 		};
-		BA13D73AC496C857B8F06047D8FB4541 /* Release */ = {
+		7CC905EA3F572255564A73C4DC29B000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 132A7C635BE1D2080B1AA7C2B9AA83A0 /* RDPAlertView.xcconfig */;
 			buildSettings = {
@@ -716,7 +876,34 @@
 			};
 			name = Release;
 		};
-		C59BE88A60C0E2DF055CE89400C7F847 /* Debug */ = {
+		95B364877AD8F384B42BE7499CC84B95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1B7CEF2E3FDC80C3F18A7654C42F97E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 132A7C635BE1D2080B1AA7C2B9AA83A0 /* RDPAlertView.xcconfig */;
 			buildSettings = {
@@ -743,27 +930,78 @@
 			};
 			name = Debug;
 		};
+		EFA5B9135FAD74A3674A11E713D12306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE07589FBBE1C513E7A1E5DC92BAAAC /* Pods-RDPAlertView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RDPAlertView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RDPAlertView_Example/Pods-RDPAlertView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RDPAlertView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F24D8EA78C2F7998669632405E4A0B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8B80A88568C63A537BAB8BFDAD5B200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132A7C635BE1D2080B1AA7C2B9AA83A0 /* RDPAlertView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RDPAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09C55AA42EE5E151DC48DC657B03238E /* Build configuration list for PBXNativeTarget "RDPAlertView-RDPAlertView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				893B4BE1139DBA8A4D75073D0E58F666 /* Debug */,
-				11DAB865D1CB015DCCF5BA6722DF01EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24DE5C45D6705748F8E2B4C6059342DC /* Build configuration list for PBXNativeTarget "Pods-RDPAlertView_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64A363664BF6914718B724511AFE9434 /* Debug */,
-				8CE981DCB79115843D44C478CED86228 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -782,11 +1020,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87B23567F8AE898F2A3915BDA4A555EA /* Build configuration list for PBXNativeTarget "RDPAlertView" */ = {
+		658179A1B7DC0C7927780F1F69C59515 /* Build configuration list for PBXNativeTarget "RDPAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C59BE88A60C0E2DF055CE89400C7F847 /* Debug */,
-				BA13D73AC496C857B8F06047D8FB4541 /* Release */,
+				C1B7CEF2E3FDC80C3F18A7654C42F97E /* Debug */,
+				7CC905EA3F572255564A73C4DC29B000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFD0B1940813DE19D7C6BE6F4D8052E /* Build configuration list for PBXNativeTarget "RDPAlertView-RDPAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643DBF28F81B1755ABFA4FF8F7469924 /* Debug */,
+				F8B80A88568C63A537BAB8BFDAD5B200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98422E3FE300CF1ED4AF48C56C2E1388 /* Build configuration list for PBXNativeTarget "Pods-RDPAlertView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA5B9135FAD74A3674A11E713D12306 /* Debug */,
+				7442FCE26F52AB152B284BE69CE79789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C692385904021C81058B89C8E286FF69 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24D8EA78C2F7998669632405E4A0B40 /* Debug */,
+				95B364877AD8F384B42BE7499CC84B95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

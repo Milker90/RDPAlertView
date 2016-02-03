@@ -14,8 +14,9 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.frame = CGRectMake(0, 0, [self rdpContentViewWidth], [self rdpContentViewHeight]);
-        [self configUI];
+        if (CGRectEqualToRect(frame, CGRectZero)) {
+            self.frame = CGRectMake(0, 0, 270.0f, 270.0f);
+        }
     }
     return self;
 }
@@ -33,26 +34,16 @@
     [self addSubview:button];
 }
 
-- (void)close {
+- (void)hideWithAdditionalValues:(NSDictionary *)additionalValues
+                     buttonIndex:(NSInteger)buttonIndex {
     __weak typeof(self)weakSelf = self;
     [_alertView hide:^(BOOL finished) {
         if (finished) {
             if (weakSelf.reslutBlock) {
-                weakSelf.reslutBlock(nil, nil, 1);
-            }
-            
+                weakSelf.reslutBlock(weakSelf.alertView, additionalValues, buttonIndex);
+            }            
         }
     }];
-}
-
-#pragma mark
-#pragma mark - 配置大小
-- (CGFloat)rdpContentViewHeight {
-    return 270.0f;
-}
-
-- (CGFloat)rdpContentViewWidth {
-    return 270.0f;
 }
 
 @end

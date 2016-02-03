@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-RDPAlertView_Example/Masonry.framework"
   install_framework "Pods-RDPAlertView_Example/RDPAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-RDPAlertView_Example/Masonry.framework"
   install_framework "Pods-RDPAlertView_Example/RDPAlertView.framework"
 fi

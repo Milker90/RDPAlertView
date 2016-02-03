@@ -1,7 +1,9 @@
 PODS:
+  - Masonry (0.6.4)
   - RDPAlertView (0.1.0)
 
 DEPENDENCIES:
+  - Masonry (~> 0.6.4)
   - RDPAlertView (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RDPAlertView: 14263282aa8e889fb952c76041358247b75a6e6b
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  RDPAlertView: af470dbf42d01c6c2649663844b8882076b57e37
 
 COCOAPODS: 0.39.0

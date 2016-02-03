@@ -10,6 +10,18 @@
 
 @implementation RDPAlertView
 
++ (RDPAlertView *)newRDPAlertViewWithContentView:(RDPAlertViewContentView *)alertViewContentView {
+    RDPAlertView *alertView = [RDPAlertView new];
+    [alertView setupAlertViewContentView:alertViewContentView alertViewAnimation:nil];
+    return alertView;
+}
+
++ (RDPAlertView *)newRDPAlertViewWithContentView:(RDPAlertViewContentView *)alertViewContentView alertViewAnimation:(RDPAlertViewAnimation *)alertViewAnimation {
+    RDPAlertView *alertView = [RDPAlertView new];
+    [alertView setupAlertViewContentView:alertViewContentView alertViewAnimation:alertViewAnimation];
+    return alertView;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {

@@ -28,6 +28,9 @@
  */
 @property (nonatomic, strong) RDPAlertViewAnimation *alertViewAnimation;
 
++ (RDPAlertView *)newRDPAlertViewWithContentView:(RDPAlertViewContentView *)alertViewContentView;
++ (RDPAlertView *)newRDPAlertViewWithContentView:(RDPAlertViewContentView *)alertViewContentView alertViewAnimation:(RDPAlertViewAnimation *)alertViewAnimation;
+
 /**
  *  setup alertView content view and use default animation
  *

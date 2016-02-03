@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8A3E4163A19F9197BA61B85D'
+               BlueprintIdentifier = '459228208023143EE770DFDC'
                BlueprintName = 'RDPAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'RDPAlertView.framework'>

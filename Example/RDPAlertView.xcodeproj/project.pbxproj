@@ -23,6 +23,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9D1A477B1C61F4F700BEFC4E /* UIImage+RDPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A477A1C61F4F700BEFC4E /* UIImage+RDPExtension.m */; };
+		9DD4B90A1C61E868009D580F /* RDPCustomAlertViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4B9091C61E868009D580F /* RDPCustomAlertViewContentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		792D3D8B0992A687B10EE9ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		928D167C662DCC57DD1B222B /* Pods-RDPAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDPAlertView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDPAlertView_Example/Pods-RDPAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1A47791C61F4F700BEFC4E /* UIImage+RDPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RDPExtension.h"; sourceTree = "<group>"; };
+		9D1A477A1C61F4F700BEFC4E /* UIImage+RDPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RDPExtension.m"; sourceTree = "<group>"; };
+		9DD4B9081C61E868009D580F /* RDPCustomAlertViewContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPCustomAlertViewContentView.h; sourceTree = "<group>"; };
+		9DD4B9091C61E868009D580F /* RDPCustomAlertViewContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDPCustomAlertViewContentView.m; sourceTree = "<group>"; };
 		BA1D488DA92EC6E202A5B1CC /* Pods-RDPAlertView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDPAlertView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDPAlertView_Tests/Pods-RDPAlertView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF924D7A7708FA37F87972A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +152,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* RDPViewController.h */,
 				6003F5A6195388D20070C39A /* RDPViewController.m */,
+				9DD4B9081C61E868009D580F /* RDPCustomAlertViewContentView.h */,
+				9DD4B9091C61E868009D580F /* RDPCustomAlertViewContentView.m */,
+				9D1A47791C61F4F700BEFC4E /* UIImage+RDPExtension.h */,
+				9D1A477A1C61F4F700BEFC4E /* UIImage+RDPExtension.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -390,6 +400,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1A477B1C61F4F700BEFC4E /* UIImage+RDPExtension.m in Sources */,
+				9DD4B90A1C61E868009D580F /* RDPCustomAlertViewContentView.m in Sources */,
 				6003F59E195388D20070C39A /* RDPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RDPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

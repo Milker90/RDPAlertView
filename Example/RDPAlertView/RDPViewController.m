@@ -8,7 +8,7 @@
 
 #import "RDPViewController.h"
 #import "RDPAlertView.h"
-#import "RDPAlertViewContentView.h"
+#import "RDPCustomAlertViewContentView.h"
 
 @interface RDPViewController ()
 
@@ -36,12 +36,18 @@
 }
 
 - (void)show {
-    RDPAlertView *alertView = [RDPAlertView new];
-    RDPAlertViewContentView *contentView = [RDPAlertViewContentView new];
+    
+    // 1，创建contentView
+    RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newCustomAlertViewContentView:@"提示" message:@"这是一个全新的alertView，欢迎使用它。" buttonTitles:@"好的", @"不了", nil];
     contentView.reslutBlock = ^(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex) {
         NSLog(@"%@", @(buttonIndex));
     };
-    [alertView setupAlertViewContentView:contentView];
+    
+    // 2，创建一个alertView，并配置它的contentView，也可以配置alertView的动画
+    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView];
+//    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];
+    
+    // 3， 显示alertView
     [alertView show];
 }
 

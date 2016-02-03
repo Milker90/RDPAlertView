@@ -1,15 +1,15 @@
 {
   "name": "RDPAlertView",
   "version": "0.1.0",
-  "summary": "A short description of RDPAlertView.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RDPAlertView",
+  "summary": "RDPAlertView.",
+  "description": "RDPAlertView test pod",
+  "homepage": "https://github.com/Milker90/RDPAlertView.git",
   "license": "MIT",
   "authors": {
-    "TommyLiu": "tomy.xos@gmail.com"
+    "Milker90": "tomy.xos@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RDPAlertView.git",
+    "git": "https://github.com/Milker90/RDPAlertView.git",
     "tag": "0.1.0"
   },
   "platforms": {
