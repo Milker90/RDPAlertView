@@ -20,7 +20,7 @@ RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newC
  
 ```
 RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView];
-    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];
+RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];
 ```
     
  3， 显示alertView<br>
