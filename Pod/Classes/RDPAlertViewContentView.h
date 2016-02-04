@@ -2,7 +2,7 @@
 //  RDPAlertViewContentView.h
 //  Pods
 //
-//  Created by Allan Liu on 16/1/29.
+//  Created by Milker90 on 16/1/29.
 //
 //
 

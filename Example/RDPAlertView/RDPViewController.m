@@ -16,8 +16,7 @@
 
 @implementation RDPViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
@@ -29,14 +28,7 @@
     [self.view addSubview:button];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)show {
-    
+- (void)show {    
     // 1，创建contentView
     RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newCustomAlertViewContentView:@"提示" message:@"这是一个全新的alertView，欢迎使用它。" buttonTitles:@"好的", @"不了", nil];
     contentView.reslutBlock = ^(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex) {

@@ -2,8 +2,8 @@
 //  RDPCustomAlertViewContentView.m
 //  RDPAlertView
 //
-//  Created by Allan Liu on 16/2/3.
-//  Copyright © 2016年 TommyLiu. All rights reserved.
+//  Created by Milker90 on 16/2/3.
+//  Copyright © 2016年 Milker90. All rights reserved.
 //
 
 #import "RDPCustomAlertViewContentView.h"
@@ -45,7 +45,6 @@
 }
 
 - (void)configUI {
-    // 覆盖此方法来布局不同的contentView
     self.clipsToBounds = YES;
     self.layer.cornerRadius = 4.0f;
     self.backgroundColor = [UIColor whiteColor];
@@ -87,7 +86,7 @@
     [self addSubview:_messageLabel];
     _messageLabel.frame = CGRectMake(0, 0, 200, MAXFLOAT);
     [_messageLabel sizeToFit];
-    [_messageLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [_messageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.mas_centerX);
         make.top.mas_equalTo(_titleLabel.mas_bottom).offset(10);
         make.size.mas_equalTo(_messageLabel.frame.size);
@@ -100,14 +99,14 @@
     [buttonBackground setBackgroundImage:bimage forState:UIControlStateNormal];
     [buttonBackground setBackgroundImage:bimage forState:UIControlStateHighlighted];
     [self addSubview:buttonBackground];
-    [buttonBackground mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [buttonBackground mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.mas_left);
         make.right.mas_equalTo(self.mas_right);
         make.bottom.mas_equalTo(self.mas_bottom);
         make.height.mas_equalTo(44);
     }];
     
-    CGFloat left = 0.0f;
+    CGFloat left = 0;
     CGFloat buttonWidth = (270 - 0.5 *(self.buttonTitles.count - 1))/self.buttonTitles.count;
     for (NSInteger i = 0; i < self.buttonTitles.count; i++) {
         NSString *buttonTitle = [self.buttonTitles objectAtIndex:i];
@@ -116,11 +115,11 @@
         button.tag = 10000 + i;
         [button setTitle:buttonTitle forState:UIControlStateNormal];
         [button setTitleColor:HEXCOLOR(0x4783c6) forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+        button.titleLabel.font = [UIFont systemFontOfSize:15];
         button.backgroundColor = [UIColor clearColor];
         [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
-        [button mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [button mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.mas_left).offset(left);
             make.bottom.mas_equalTo(self.mas_bottom);
             make.width.mas_equalTo(buttonWidth);
