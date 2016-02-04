@@ -8,17 +8,26 @@
 ## Usage
 
  1，创建contentView<br>
- ```RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newCustomAlertViewContentView:@"提示" message:@"这是一个全新的alertView，欢迎使用它。" buttonTitles:@"好的", @"不了", nil];
+ 
+```
+RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newCustomAlertViewContentView:@"提示" message:@"这是一个全新的alertView，欢迎使用它。" buttonTitles:@"好的", @"谢谢", nil];
     contentView.reslutBlock = ^(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex) {
         NSLog(@"%@", @(buttonIndex));
-    };```
+    };
+```
     
  2，创建一个alertView，并配置它的contentView，也可以配置alertView的动画<br>
- ```    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView];
-    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];```
+ 
+```
+RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView];
+    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];
+```
     
  3， 显示alertView<br>
- ```[alertView show];```
+ 
+```
+[alertView show];
+```
 
 ## Installation
 
