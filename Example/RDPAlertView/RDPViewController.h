@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RDPViewController : UIViewController
+@interface RDPViewController : UITableViewController
 
 @end

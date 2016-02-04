@@ -16,7 +16,7 @@
  *  @param additionalValues alertView界面上的数据
  *  @param buttonIndex      选择的按钮索引
  */
-typedef void (^RDPAlertViewResultBlock)(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex);
+typedef void (^RDPAlertViewResultBlock)(RDPAlertView * alertView, NSDictionary *values,  NSInteger buttonIndex);
 
 /**
  *  和alertView交互的block
@@ -25,11 +25,11 @@ typedef void (^RDPAlertViewResultBlock)(RDPAlertView * alertView, NSDictionary *
  *  @param additionalValues 交互数据
  *  @param actionStr        交互字符串
  */
-typedef void (^RDPAlertViewActionBlock)(RDPAlertView * alertView, NSDictionary *additionalValues, NSString * actionStr);
+typedef void (^RDPAlertViewActionBlock)(RDPAlertView * alertView, NSDictionary *values, NSString * actionStr);
 
 @interface RDPAlertViewContentView : UIView
 
-@property (nonatomic, strong) id data;
+@property (nonatomic, strong) NSMutableDictionary *values;
 
 @property (nonatomic, weak) RDPAlertView *alertView;
 
@@ -47,7 +47,16 @@ typedef void (^RDPAlertViewActionBlock)(RDPAlertView * alertView, NSDictionary *
  *  @param additionalValues 需要传出去的数据
  *  @param buttonIndex      当前选择的按钮索引
  */
-- (void)hideWithAdditionalValues:(NSDictionary *)additionalValues
-                     buttonIndex:(NSInteger)buttonIndex;
+- (void)hideWithValues:(NSDictionary *)values
+           buttonIndex:(NSInteger)buttonIndex;
+
+/**
+ *  alertView上的交互操作
+ *
+ *  @param values       需要传出去的数据
+ *  @param actionString 自定义的action类型
+ */
+- (void)sendActionWithValues:(NSDictionary *)values
+                actionString:(NSString *)actionString;
 
 @end

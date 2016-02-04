@@ -1,35 +1,28 @@
 //
-//  RDPCustomAlertViewContentView.m
+//  RDPCustomAlertViewContentView1.m
 //  RDPAlertView
 //
-//  Created by Milker90 on 16/2/3.
-//  Copyright © 2016年 Milker90. All rights reserved.
+//  Created by Allan Liu on 16/2/4.
+//  Copyright © 2016年 TommyLiu. All rights reserved.
 //
 
-#import "RDPCustomAlertViewContentView.h"
+#import "RDPCustomAlertViewContentView1.h"
 #import "View+MASAdditions.h"
 #import "UIImage+RDPExtension.h"
 
-// 16进制颜色
-#define HEXCOLOR(rgbValue) HEXACOLOR(rgbValue, 1.f)
-#define HEXACOLOR(rgbValue, a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+@interface RDPCustomAlertViewContentView1 ()
 
-@interface RDPCustomAlertViewContentView ()
-
-@property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *messageLabel;
+@property (nonatomic, strong) UITextField *contentTextField;
 
 @end
 
-@implementation RDPCustomAlertViewContentView
+@implementation RDPCustomAlertViewContentView1
 
-+ (RDPCustomAlertViewContentView *)newCustomAlertViewContentView:(NSString *)title
-                                                         message:(NSString *)message
-                                                    buttonTitles:(NSString *)buttonTitles, ... {
-    RDPCustomAlertViewContentView *contentView = [[RDPCustomAlertViewContentView alloc] initWithFrame:CGRectZero];
++ (RDPCustomAlertViewContentView1 *)newCustomAlertViewContentView:(NSString *)title
+                                                     buttonTitles:(NSString *)buttonTitles, ... {
+    RDPCustomAlertViewContentView1 *contentView = [[RDPCustomAlertViewContentView1 alloc] initWithFrame:CGRectZero];
     contentView.title = title;
-    contentView.message = message;
     
     NSMutableArray *arr = [NSMutableArray array];
     va_list buttonTitleList;
@@ -39,26 +32,21 @@
     }
     va_end(buttonTitleList);
     contentView.buttonTitles = arr;
+    
+    [contentView registerKeyboardListener];
     [contentView configUI];
     
     return contentView;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)configUI {
     self.clipsToBounds = YES;
     self.layer.cornerRadius = 4.0f;
     self.backgroundColor = [UIColor whiteColor];
-    
-    UIImage *image = [UIImage imageNamed:@"alert_tip_icon"];
-    _iconImageView = [UIImageView new];
-    _iconImageView.image = image;
-    [self addSubview:_iconImageView];
-    CGSize size = image.size;
-    [_iconImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self.mas_centerX);
-        make.top.mas_equalTo(self.mas_top).offset(30);
-        make.size.mas_equalTo(size);
-    }];
     
     // 标题
     _titleLabel = [UILabel new];
@@ -72,24 +60,34 @@
     [_titleLabel sizeToFit];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.mas_centerX);
-        make.top.mas_equalTo(_iconImageView.mas_bottom).offset(25);
+        make.top.mas_equalTo(self.mas_top).offset(25);
         make.size.mas_equalTo(_titleLabel.frame.size);
     }];
     
-    // 副标题
-    _messageLabel = [UILabel new];
-    _messageLabel.font = [UIFont systemFontOfSize:13.0f];
-    _messageLabel.textAlignment = NSTextAlignmentCenter;
-    _messageLabel.numberOfLines = 0;
-    _messageLabel.text = _message;
-    _messageLabel.textColor = HEXCOLOR(0x4783c6);
-    [self addSubview:_messageLabel];
-    _messageLabel.frame = CGRectMake(0, 0, 200, MAXFLOAT);
-    [_messageLabel sizeToFit];
-    [_messageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self.mas_centerX);
+    // 输入框
+    _contentTextField = [UITextField new];
+    _contentTextField.borderStyle = UITextBorderStyleRoundedRect;
+    _contentTextField.font = [UIFont systemFontOfSize:13.0f];
+    _contentTextField.placeholder = @"请输入内容";
+    _contentTextField.textColor = HEXCOLOR(0x4783c6);
+    [self addSubview:_contentTextField];
+    [_contentTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.mas_left).offset(15);
+        make.right.mas_equalTo(self.mas_right).offset(-15);
         make.top.mas_equalTo(_titleLabel.mas_bottom).offset(10);
-        make.size.mas_equalTo(_messageLabel.frame.size);
+        make.height.mas_equalTo(44);
+    }];
+    
+    // 重置按钮
+    UIButton *resetButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [resetButton setTitle:@"重置" forState:UIControlStateNormal];
+    [resetButton addTarget:self action:@selector(resetAction) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:resetButton];
+    [resetButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.mas_left).offset(15);
+        make.right.mas_equalTo(self.mas_right).offset(-15);
+        make.top.mas_equalTo(_contentTextField.mas_bottom).offset(10);
+        make.height.mas_equalTo(44);
     }];
     
     // 底部按钮
@@ -163,8 +161,51 @@
     }
 }
 
-- (void)buttonAction:(UIButton *)button {
-    [self hideWithAdditionalValues:nil buttonIndex:button.tag - 10000];
+- (void)resetAction {
+    [self sendActionWithValues:nil actionString:@"reset"];
 }
+
+- (void)buttonAction:(UIButton *)button {
+    if (_contentTextField.text) {
+        [self.values setObject:_contentTextField.text forKey:@"inputValue"];
+    }
+    [self hideWithValues:self.values buttonIndex:button.tag - 10000];
+}
+
+#pragma mark
+#pragma mark - keyboard
+- (void)registerKeyboardListener {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
+}
+
+- (void)keyboardWillShow:(NSNotification *)notif {
+    if (self.hidden == YES) {
+        return;
+    }
+    
+    CGRect rect = [[notif.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    CGRect frame = self.frame;
+    frame.origin.y = [UIScreen mainScreen].bounds.size.height - rect.size.height - frame.size.height;
+    self.frame = frame;
+}
+
+- (void)keyboardWillHide:(NSNotification *)notif {
+    if (self.hidden == YES) {
+        return;
+    }
+    CGSize size = [UIScreen mainScreen].bounds.size;
+    self.center = CGPointMake(size.width/2, size.height/2);
+}
+
 
 @end

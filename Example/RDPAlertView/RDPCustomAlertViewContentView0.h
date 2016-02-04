@@ -1,5 +1,5 @@
 //
-//  RDPCustomAlertViewContentView.h
+//  RDPCustomAlertViewContentView0.h
 //  RDPAlertView
 //
 //  Created by Milker90 on 16/2/3.
@@ -8,13 +8,13 @@
 
 #import <RDPAlertView/RDPAlertView.h>
 
-@interface RDPCustomAlertViewContentView : RDPAlertViewContentView
+@interface RDPCustomAlertViewContentView0 : RDPAlertViewContentView
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, strong) NSArray *buttonTitles;
 
-+ (RDPCustomAlertViewContentView *)newCustomAlertViewContentView:(NSString *)title
++ (RDPCustomAlertViewContentView0 *)newCustomAlertViewContentView:(NSString *)title
                                                          message:(NSString *)message
                                                     buttonTitles:(NSString *)buttonTitles, ...;
 

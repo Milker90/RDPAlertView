@@ -11,15 +11,20 @@
  
 ```
 RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newCustomAlertViewContentView:@"提示" message:@"这是一个全新的alertView，欢迎使用它。" buttonTitles:@"好的", @"谢谢", nil];
-    contentView.reslutBlock = ^(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex) {
+contentView.reslutBlock = ^(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex) {
         NSLog(@"%@", @(buttonIndex));
     };
 ```
+
+2，创建自定义动画
+
+```
+RDPAlertViewCustomAnimation *alertViewAnimation = [RDPAlertViewCustomAnimation new];
+```
     
- 2，创建一个alertView，并配置它的contentView，也可以配置alertView的动画<br>
+3，创建一个alertView，并配置它的contentView，以及自定义动画<br>
  
 ```
-RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView];
 RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];
 ```
     

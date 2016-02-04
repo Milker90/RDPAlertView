@@ -54,7 +54,7 @@
     [self addSubview:alertViewContentView];
     self.alertViewContentView = alertViewContentView;
     
-    if (!_alertViewAnimation) {
+    if (!alertViewAnimation) {
         _alertViewAnimation = [RDPAlertViewAnimation new];
     } else {
         _alertViewAnimation = alertViewAnimation;

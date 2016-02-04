@@ -17,6 +17,7 @@
         if (CGRectEqualToRect(frame, CGRectZero)) {
             self.frame = CGRectMake(0, 0, 270.0f, 270.0f);
         }
+        self.values = [NSMutableDictionary dictionary];        
     }
     return self;
 }
@@ -34,16 +35,23 @@
     [self addSubview:button];
 }
 
-- (void)hideWithAdditionalValues:(NSDictionary *)additionalValues
-                     buttonIndex:(NSInteger)buttonIndex {
+- (void)hideWithValues:(NSDictionary *)values
+           buttonIndex:(NSInteger)buttonIndex {
     __weak typeof(self)weakSelf = self;
     [_alertView hide:^(BOOL finished) {
         if (finished) {
             if (weakSelf.reslutBlock) {
-                weakSelf.reslutBlock(weakSelf.alertView, additionalValues, buttonIndex);
+                weakSelf.reslutBlock(weakSelf.alertView, values, buttonIndex);
             }            
         }
     }];
+}
+
+- (void)sendActionWithValues:(NSDictionary *)values
+                actionString:(NSString *)actionString {
+    if (self.actionBlock) {
+        self.actionBlock(self.alertView, values, actionString);
+    }
 }
 
 @end

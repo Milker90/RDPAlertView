@@ -7,12 +7,18 @@
 //
 
 #import "RDPAppDelegate.h"
+#import "RDPViewController.h"
 
 @implementation RDPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    RDPViewController *vc = [RDPViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    _window.rootViewController = nav;
+    [_window makeKeyAndVisible];
     return YES;
 }
 

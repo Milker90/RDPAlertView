@@ -1,9 +1,11 @@
 PODS:
   - Masonry (0.6.4)
-  - RDPAlertView (0.1.0)
+  - pop (1.0.8)
+  - RDPAlertView (0.1.1)
 
 DEPENDENCIES:
   - Masonry (~> 0.6.4)
+  - pop (~> 1.0.8)
   - RDPAlertView (from `../`)
 
 EXTERNAL SOURCES:
@@ -12,6 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  RDPAlertView: af470dbf42d01c6c2649663844b8882076b57e37
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  RDPAlertView: ab0dcb7e08f7687ea82f85f628139329cfeb99a8
 
 COCOAPODS: 0.39.0
