@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RDPAlertView
 
 [![CI Status](http://img.shields.io/travis/Milker90/RDPAlertView.svg?style=flat)](https://travis-ci.org/Milker90/RDPAlertView)
@@ -8,9 +7,18 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+ 1，创建contentView<br>
+ ```RDPCustomAlertViewContentView *contentView = [RDPCustomAlertViewContentView newCustomAlertViewContentView:@"提示" message:@"这是一个全新的alertView，欢迎使用它。" buttonTitles:@"好的", @"不了", nil];
+    contentView.reslutBlock = ^(RDPAlertView * alertView, NSDictionary *additionalValues,  NSInteger buttonIndex) {
+        NSLog(@"%@", @(buttonIndex));
+    };```
+    
+ 2，创建一个alertView，并配置它的contentView，也可以配置alertView的动画<br>
+ ```    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView];
+    RDPAlertView *alertView = [RDPAlertView newRDPAlertViewWithContentView:contentView alertViewAnimation:alertViewAnimation];```
+    
+ 3， 显示alertView<br>
+ ```[alertView show];```
 
 ## Installation
 
@@ -20,14 +28,3 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RDPAlertView"
 ```
-
-## Author
-
-Milker90, tomy.xos@gmail.com
-
-## License
-
-RDPAlertView is available under the MIT license. See the LICENSE file for more info.
-=======
-# RDPAlertView
->>>>>>> 6c00f5c8e69ed6f0042b09f9cb405ab57f95020a
