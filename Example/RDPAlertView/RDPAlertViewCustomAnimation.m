@@ -15,10 +15,14 @@
           contentView:(UIView *)contentView
       animationDidEnd:(void (^)(BOOL finish))block {
     // 覆盖此方法，实现backgroundView和contentView的动画
-    
     if (!backgroundView || !contentView) {
         return;
     }
+    
+    if (self.isAnimating) {
+        return;
+    }
+    self.isAnimating = YES;
     
     backgroundView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     [backgroundView pop_removeAllAnimations];
@@ -52,6 +56,10 @@
           contentView:(UIView *)contentView
       animationDidEnd:(void (^)(BOOL))block {
     // 覆盖此方法，实现backgroundView和contentView的动画
+    if (self.isAnimating) {
+        return;
+    }
+    self.isAnimating = YES;
     
     [contentView pop_removeAllAnimations];
     POPBasicAnimation *scale2Animation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
@@ -82,8 +90,10 @@
     backgroundAnimation.toValue = [UIColor clearColor];
     backgroundAnimation.duration = 0.4;
     backgroundAnimation.beginTime = CACurrentMediaTime() + 0.35;
+    __weak typeof(self)weakSelf = self;
     [backgroundAnimation setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
         if (finished) {
+            weakSelf.isAnimating = NO;
             block(YES);
         }
     }];
